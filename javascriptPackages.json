@@ -8,7 +8,7 @@
         },
         {
             "name" : "arrowJS",
-            "cdn_url" : "https://esm.sh/v128/@arrow-js/core@1.0.0-alpha.9/esnext/core.mjs",
+            "cdn_url" : "https://esm.sh/@arrow-js/core",
             "path" : "arrow.js"
         }
     ]

@@ -4,7 +4,7 @@
 mkdir -p app/static/js/packages
 
 # Read the JSON file and extract the package information
-packages=$(jq -r '.packages[] | "\(.path)=\(.cdn_url)"' jsPackages.json)
+packages=$(jq -r '.packages[] | "\(.path)=\(.cdn_url)"' javascriptPackages.json)
 
 # Loop through the packages and download them
 while IFS='=' read -r path_url; do

@@ -2,7 +2,7 @@
 New-Item -ItemType Directory -Force -Path "app/static/js/packages"
 
 # Read the JSON file and extract the package information
-$json = Get-Content -Raw -Path "jsPackages.json" | ConvertFrom-Json
+$json = Get-Content -Raw -Path "javascriptPackages.json" | ConvertFrom-Json
 $packages = $json.packages
 
 # Loop through the packages and download them
