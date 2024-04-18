@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <script src="{{ url_for('static', filename='js/packages/htmx.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/style.css') }}"></link>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/navbarStyling.css') }}"></link>
+</head>
+<body id="root">
+    <div id="navbar-root">
+    </div>
+    <hr class="nav-line-break">
+    <div id="content-root">
+        <main>
+            <h2>About Me</h2>
+        </main>
+        <aside>
+            <h3>Aside</h3>
+        </aside>
+    </div>
+    <script type="module">
+        import navbar from "{{ url_for('static', filename='js/components/navbar.js') }}"
+        const root = document.getElementById("navbar-root")
+        navbar(root)
+    </script>
+
+</body>
+</html>

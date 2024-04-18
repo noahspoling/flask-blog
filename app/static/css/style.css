@@ -1,0 +1,48 @@
+:root {
+    --pale-purple: rgb(200, 150, 255);
+    --light-purple: rgb(150, 75, 255);
+    --rich-purple: rgb(100, 50, 255);
+    --dark-purple: rgb(50, 25, 127);
+    
+    --deep-yellow: rgb(226, 226, 152);
+    --pale-yellow: rgb(235, 235, 210);
+}
+
+/* Text Styling */
+
+a {
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav-line-break {
+    margin-top: 0px;
+    background-color: var(--dark-purple);
+    animation: lineGrow .5s ease-out forwards;
+}
+
+/* Divs */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--deep-yellow);
+}
+
+button {
+    max-width: 250px;
+    border-radius: 5px;
+    color: var(--deep-yellow);
+    padding: 1rem;
+    border-style: none;
+    background: var(--rich-purple);
+
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+button:hover {
+    border: 1px solid var(--rich-purple);
+    color: var(--rich-purple);
+    background-color: var(--deep-yellow);
+
+    transform: scale(1.1);
+}
