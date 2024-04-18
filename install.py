@@ -16,8 +16,8 @@ if __name__ == '__main__':
         subprocess.run(['./' + script_path], shell=True)
 
     elif operating_system == 'Linux' or operating_system == 'Darwin':
-        # script_path = 'install_JS_packages.sh'
-        # subprocess.run(['./' + script_path], shell=True)
+        script_path = 'install_JS_packages.sh'
+        subprocess.run(['./' + script_path], shell=True)
 
         script_path = 'install_PY_packages.sh'
         subprocess.run(['./' + script_path], shell=True)
